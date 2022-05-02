@@ -1,7 +1,7 @@
 <template>
   <button
     :class="classList"
-    class="no-underline hover:no-underline font-bold text-2xl lg:text-4xl flex items-center"
+    class="no-underline hover:no-underline font-bold text-lg lg:text-4xl flex items-center"
     @click="$router.push('/')"
   >
     <!--Icon from: http://www.potlabicons.com/ -->

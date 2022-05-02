@@ -1,18 +1,19 @@
 <template>
-  <div class="flex flex-wrap my-16 h-auto justify-center items-center">
-    <div class="w-full text-center md:w-1/2 p-6 align-middle">
+  <div class="flex flex-wrap flex-col-reverse md:flex-row w-full my-16 h-auto justify-left items-center md:text-right">
+    <div class="w-full md:w-1/2 p-6 text-center md:text-right">
       <h3 class="text-3xl font-bold leading-none mb-3">
         {{ headline }}
       </h3>
-      <p class="mb-8">
-        {{ content }}
-      </p>
+      <slot class="mb-8" name="content"/>
     </div>
-    <div class="w-full sm:w-1/2 p-6">
-      <slot name="svg" />
-    </div>
+      <div class="flex flex-wrap w-full md:w-1/2 p-6 mt-6">
+        <div class="flex justify-center w-full">
+          <slot name="svg"/>
+        </div>
+      </div>
   </div>
 </template>
+
 
 <script>
 export default {

@@ -5,9 +5,9 @@
     >
       <div class="pl-4 flex items-center">
         <Logo class="w-12 h-12"
-          title="Title"
-          logo="assets/logos/logo_dark.png"
-          logoDark="assets/logos/logo.png"
+          logo="assets/logos/angelists_dark_transparent.png"
+          logoDark="assets/logos/angelists_transparent.png"
+          title="Angelists"
           :isStickable="true"
           :isSticky="isSticky"
           :isOpen="isOpen"
@@ -47,15 +47,29 @@
           <li class="mr-3">
             <button
               class="inline-block py-2 px-4 no-underline"
-              @click="($route === '/') ? window.location('#products') : $router.push('/#products')"
-              >Products</button
+              @click="($route === '/') ? window.location('#howitworks') : $router.push('/#howitworks')"
+              >How it Works</button
             >
           </li>
           <li class="mr-3">
             <button
               class="inline-block py-2 px-4 no-underline"
-              @click="($route === '/') ? window.location('#partner') : $router.push('/#partner')"
-              >Partner</button
+              @click="($route === '/') ? window.location('#tokenomics') : $router.push('/#tokenomics')"
+              >Tokenomics</button
+            >
+          </li>
+          <li class="mr-3">
+            <button
+              class="inline-block py-2 px-4 no-underline"
+              @click="($route === '/') ? window.location('#roadmap') : $router.push('/#roadmap')"
+              >Roadmap</button
+            >
+          </li>
+          <li class="mr-3">
+            <button
+              class="inline-block py-2 px-4 no-underline"
+              @click="($route === '/') ? window.location('#community') : $router.push('/#community')"
+              >Community</button
             >
           </li>
         </ul>

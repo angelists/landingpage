@@ -1,14 +1,16 @@
 <template>
-  <div class="flex flex-wrap flex-col-reverse sm:flex-row my-16">
-    <div class="w-full sm:w-1/2 p-6 mt-6">
-      <slot name="svg" />
+  <div class="flex flex-wrap justify-right w-full sm:flex-row">
+    <div class="flex flex-wrap w-full md:w-1/2 p-6 mt-6">
+      <div class="flex justify-center w-full">
+        <slot name="svg"/>
+      </div>
     </div>
-    <div class="w-full h-auto flex justify-center items-center md:w-1/2 p-6 mt-6">
-      <div class="align-middle">
-        <h3 class="text-3xl font-bold leading-none mb-3">{{ headline }}</h3>
-        <p class="mb-8 h-auto">
-          {{ content }}
-        </p>
+    <div class="h-auto flex justify-right items-center w-full md:w-1/2 p-6 mt-6">
+      <div class="align-middle text-center md:text-left">
+        <h3 class="text-3xl font-bold leading-none mb-3">
+          {{ headline }}
+        </h3>
+        <slot class="mb-8 h-auto" name="content"/>
       </div>
     </div>
   </div>

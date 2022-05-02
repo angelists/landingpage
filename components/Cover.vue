@@ -1,32 +1,51 @@
 <template>
-  <section class="pt-24">
+  <section class="pt-24 h-auto pb-12">
     <div
-      class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center w-full"
+      class="px-3 flex flex-col items-center w-full"
     >
       <!--Left Col-->
       <div
-        class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
+        class="px-3 flex flex-col items-center justify-center w-full py-32"
       >
-        <p class="w-full uppercase tracking-loose w-full">Subtile</p>
-        <h1 class="w-full my-4 text-5xl font-bold leading-tight">
-          Slogan
-        </h1>
-        <p class="w-full leading-normal text-2xl mb-8 font-thin">
-          Description
-        </p>
+        <!--Right Col-->
+        <div class="flex w-full justify-center items-center py-6 text-center">
+          <img class="w-full md:w-1/5" src="~/assets/logos/angelists_transparent.png" alt />
+        </div>
+        <div class="flex flex-col w-full justify-center items-center py-6 text-center">
+          <h1>Angelists</h1>
+          <p class="w-full">The Community Driven Angel</p>
+        </div>
 
-        <a
-          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-2 px-8 shadow-lg flex items-center"
-          href="#"
-          target="_blank"
-        >
-          <Telegram class="mr-4 text-gray-900"/>
-          Contact
-        </a>
-      </div>
-      <!--Right Col-->
-      <div class="w-full md:w-3/5 py-6 text-center flex">
-        <img class="w-full justify-center items-center" src="~/assets/imgs/image.png" alt />
+        <div class="flex justify-center items-center w-full text-white">
+          <a
+            class="mx-auto lg:mx-0 hover:underline font-bold rounded-full my-2 py-4 px-2 flex items-center"
+            href="https://www.linkedin.com/company/angelists/"
+            target="_blank"
+            >
+            <Linkedin class="mr-4"/>
+          </a>
+          <!-- <a
+            class="mx-auto lg:mx-0 hover:underline font-bold rounded-full my-2 py-4 px-2 flex items-center"
+            href="https://discord.gg/7uP2SQ2t5F"
+            target="_blank"
+            >
+            <Discord class="mr-4"/>
+          </a> -->
+          <a
+            class="mx-auto lg:mx-0 hover:underline font-bold rounded-full my-2 py-4 px-2 flex items-center"
+            href="https://twitter.com/AngelistsCap"
+            target="_blank"
+            >
+            <Twitter class="mr-4"/>
+          </a>
+          <a
+            class="mx-auto lg:mx-0 hover:underline font-bold rounded-full my-2 py-4 px-2 flex items-center"
+            href="https://github.com/angelists"
+            target="_blank"
+            >
+            <Github class="mr-4"/>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -34,10 +53,18 @@
 
 <script>
 import Telegram from '~/assets/svgs/telegram.svg'
+import Linkedin from '~/assets/svgs/linkedin.svg'
+import Discord from '~/assets/svgs/discord.svg'
+import Github from '~/assets/svgs/github.svg'
+import Twitter from '~/assets/svgs/twitter.svg'
 
 export default {
   components: {
-    Telegram
+    Telegram,
+    Linkedin,
+    Discord,
+    Github,
+    Twitter
   }
 }
 </script>

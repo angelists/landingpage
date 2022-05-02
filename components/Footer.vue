@@ -4,9 +4,10 @@
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6">
           <Logo
-            class="w-12 h-12 text-gray-800" 
-            logo="assets/logos/logo_dark.png"
-            title="Title"
+            class="w-12 h-12 text-gray-800"
+            logo="assets/logos/angelists_dark_transparent.png"
+            logoDark="assets/logos/angelists_transparent.png"
+            title="Angelists"
             :isSticky="true"/>
         </div>
 

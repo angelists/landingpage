@@ -1,8 +1,8 @@
 <template>
-  <div class="leading-normal tracking-normal text-white bg-gray-800">
+  <div class="leading-normal tracking-normal text-white gradient">
     <Header />
     <nuxt />
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style>
-
-
+.gradient {
+  background: radial-gradient(circle at 80% 20%, #2d2f54 0%, #a8527c 100%);
+  background-attachment: fixed;
+}
 </style>
